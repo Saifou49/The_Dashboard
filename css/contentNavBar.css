@@ -1,0 +1,171 @@
+/* This is for all elements in the section content not only the nav bar */
+#content{
+    position: relative;
+    width: calc(100% - 280px);/*Place the content navbar where the sidebar ends*/
+    left: 280px;  /*The position of the content navbar from the left*/
+    transition:  .3s ease;
+}
+
+/*To make the content navbar slide to the left*/
+#sidebar.hide ~ #content{
+    width: calc(100% - 60px);
+    left: 60px;
+}
+
+/* this is now for the nav bar in the content section */
+#content nav{
+    height: 56px;/*define the height of the navbar*/
+    background: var(--light);
+    padding: 0 24px;
+    display: flex;
+    align-items: center;
+    grid-gap: 24px; /*To add space between the element in the nav bar*/
+    font-family: var(--lato);
+    position: relative;
+}
+
+/*To add a radius to the inner side at the angle of the content navbar */
+#content nav::before{
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    bottom: -40px;
+    left: 0;
+    border-radius: 50%;
+    box-shadow:-20px -20px 0 var(--light)
+}
+
+#content nav a{
+    color: var(--dark);
+}
+
+#content nav .bx.bx-menu{
+    cursor: pointer;
+}
+
+#content nav .nav-link{
+    font-size: 16px;
+    transition: .3s ease;
+}
+
+#content nav .nav-link:hover{
+    color: var(--blue);
+}
+
+#content nav form{
+    max-width: 400px;
+    width: 100%;
+    margin-right: auto;
+}
+
+#content nav form .form-input{
+    display: flex;
+    align-items: center;
+    height: 36px;
+    /* background: red; */
+}
+
+#content nav form .form-input input{
+    flex-grow:1;/*To make that the input takes the length of his div*/
+    padding: 0 16px;
+    height: 100%;
+    border: none;
+    border-radius: 0  50px 0 50px;
+    background: var(--grey);
+    /* outline: none; To clear the borders when i click in the inputfield*/ 
+    outline-color: rgb(247, 190, 115);
+}
+
+#content nav form .form-input .search-button{
+    width: 36px;
+    height: 100%;
+    border-radius: 0px 56px 56px 56px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--light);
+    font-size: 18px;
+    cursor: pointer;
+    background: var(--blue);
+    outline: none;
+}
+
+
+#content nav .notification{
+    font-size: 20px;
+    position: relative;
+}
+
+#content nav .notification .number{
+    position: absolute;
+    top: -6px;
+    right: -6px;
+    width: 20px;
+    height: 20px;
+    background: var(--red);
+    border-radius: 50%;
+    border: 2px solid var(--light);
+    font-size: 12px;
+    font-weight: 700;
+    display: grid;
+    place-items: center;
+}
+
+#content nav .profile_picture img{
+    width: 36px;
+    height: 36px;
+    object-fit: contain;
+    border-radius: 50%;
+}
+
+
+@media screen and (max-width:768px)
+{
+    /* #content{
+        width: calc(100% - 60px);
+    } */
+
+    
+}
+
+
+@media screen and (max-width:576px)
+{
+    #content nav .nav-link{
+        display: none;
+    }
+    
+    #content nav .form-input input{
+        display: none;
+    }
+    
+    #content nav form .form-input .search-button{
+        
+        border-radius: 56px 0 56px 56px; 
+        
+        background: var(--magenta);
+        
+    }
+
+    #content nav form.show .form-input input{
+        display: block;
+    }
+    
+    #content nav form.show .form-input button{
+        border-radius: 56px 56px 56px 0;
+        background: var(--newColor);
+        /* color: rgb(55, 159, 250); */
+        color: var(--red);
+    }
+
+   
+
+/* I hide the notifications and the profile picture */
+    #content nav form.show ~.notification,
+    #content nav form.show ~.profile_picture
+    {
+        display: none;
+    }
+}

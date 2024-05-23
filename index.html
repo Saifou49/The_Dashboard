@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale = 1.0">
+
+        <!--The box-icon css-->
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <!--The box-icon css-->
+
+        <!-- The Main css where basics configurations are -->
+        <link rel="stylesheet" href="/css/config.css">
+        <!-- The Main css where basics configurations are -->
+
+        <!--The css for the sidebar-->
+        <link rel="stylesheet" href="/css/sidebar.css">
+        <!--The css for the sidebar-->
+
+        <!-- The css for the content navbar -->
+        <link rel="stylesheet" href="/css/contentNavBar.css">
+        <!-- The css for the content navbar --> 
+
+        <!-- The css for the main in the content section -->
+        <link rel="stylesheet" href="/css/mainInContent.css">
+        <!-- The css for the main in the content section -->
+
+
+
+
+
+        <title>The Dashboard</title>
+    </head>
+    
+    <body>
+        <!-- SIDEBAR -->
+        <section id="sidebar">
+            <a href="#" class="brand">
+                <i class='bx bx-wink-smile'></i>
+                <span class="text">Admin Place</span>
+            </a>
+
+            <ul class="side-menu top">
+                <li class="active">
+                    <a href="#">
+                        <i class='bx bxs-dashboard'></i>
+                        <span class="text">Dashboard</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class='bx bx-store'></i>
+                        <span class="text">My Store</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class='bx bx-analyse'></i>
+                        <span class="text">Analytics</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class='bx bx-chat'></i>
+                        <span class="text">Message</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class='bx bx-group'></i>
+                        <span class="text">Team</span>
+                    </a>
+                </li>
+            </ul>
+            <ul class="side-menu"> 
+                <li>
+                    <a href="#">
+                        <i class='bx bx-cog'></i>
+                        <span class="text">Settings</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="logout">
+                        <i class='bx bxs-log-out' ></i>
+                        <span class="text">Log Out</span>
+                    </a>
+                </li>
+            </ul>
+        </section>
+        <!-- SIDEBAR -->
+
+
+        <!-- CONTENT -->
+        <section id="content">
+            <!-- Navbar -->
+                <nav>
+                    <i class='bx bx-menu'></i>
+                    <a href="#" class="nav-link">Categories</a>
+                   
+                    <form action="#">
+                        <div class="form-input">
+                            <input type="search" placeholder="Search...">
+                            <button type="submit" class="search-button"><i class='bx bx-search'></i></button>
+                        </div>
+                    </form>
+                    <a href="#" class="notification">
+                        <i class='bx bxs-bell'></i>
+                        <span class="number">5</span>
+                    </a>
+                    <a href="#" class="profile_picture">
+                        <img src="/images/ProfilBild.JPG" alt="">
+                    </a>
+                </nav>
+            <!-- Navbar -->
+
+            <!-- MAIN -->
+                <main>
+                    <div class="head-title">
+                        <div class="left">
+                            <h1>Dashboard</h1>
+                            <ul class="breadCrumb">
+                                <li>
+                                    <a href="#">Dashboard</a>
+                                </li>
+                                <li><i class='bx bx-chevron-right' ></i></li>
+                                <li>
+                                    <a href="#" class="active">Home</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <a href="#" class="button-download">
+                            <i class='bx bxs-cloud-download'></i>
+                            <span class="text">Download</span>
+                        </a>
+                    </div>
+
+                    <ul class="info-box">
+                        <li>
+                            <i class='bx bx-check-square' ></i>
+                            <span class="text">
+                                <h3>1997</h3>
+                                <p>New customer orders</p>
+                            </span>
+                        </li>
+                        <li>
+                            <i class='bx bxs-group'></i>
+                            <span class="text">
+                                <h3>4652</h3>
+                                <p>Visitors in one day</p>
+                            </span>
+                        </li>
+                        <li>
+                            <i class='bx bxs-bank'></i>
+                            <span class="text">
+                                <h3>1253647 €</h3>
+                                <p>Is our balance</p>
+                            </span>
+                        </li>
+                    </ul>
+
+                    <div class="table-data">
+                        <div class="order">
+                            <div class="head">
+                                <h3>Recent orders</h3>
+                                <i class='bx bx-search'></i>
+                                <i class='bx bx-filter'></i>
+                            </div>
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Customer</th>
+                                        <th>Date Of Order</th>
+                                        <th>Quantity</th>
+                                        <th>Status</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <img src="/images/ProfilBild.JPG" alt="">
+                                            <p>Mamadou</p>
+                                        </td>
+                                        <td>
+                                            07.12.2023 at 2:23 PM
+                                        </td>
+                                        <td>
+                                            26 pieces
+                                        </td>
+                                        <td>
+                                            <span class="status completed">Completed</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <img src="/images/ProfilBild.JPG" alt="">
+                                            <p>Saifou</p>
+                                        </td>
+                                        <td>
+                                            07.03.2024 at 01:05 AM
+                                        </td>
+                                        <td>
+                                            100 pieces
+                                        </td>
+                                        <td>
+                                            <span class="status process">In Process</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <img src="/images/ProfilBild.JPG" alt="">
+                                            <p>Diallo</p>
+                                        </td>
+                                        <td>
+                                            23.04.2024 at 10:45 AM
+                                        </td>
+                                        <td>
+                                            1000 pieces
+                                        </td>
+                                        <td>
+                                            <span class="status pending"> Is Pending</span>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="todo">
+                            <div class="head">
+                                <h3>Todos</h3>
+                                <i class='bx bx-list-plus'></i>
+                                <i class='bx bx-filter'></i>
+                            </div>
+                            <ul class="todo-list">
+                                <li class="completed">
+                                    <p>Go for run</p>
+                                    <i class='bx bx-dots-vertical-rounded'></i>
+                                </li>
+                                <li class="not-completed">
+                                    <p>Clean the house</p>
+                                    <i class='bx bx-dots-vertical-rounded'></i>
+                                </li>
+                                <li class="completed">
+                                    <p>5 Hours of coding</p>
+                                    <i class='bx bx-dots-vertical-rounded'></i>
+                                </li>
+                                <li class="completed">
+                                    <p>Call Momy</p>
+                                    <i class='bx bx-dots-vertical-rounded'></i>
+                                </li>
+                                <li class="not-completed">
+                                    <p>Cook</p>
+                                    <i class='bx bx-dots-vertical-rounded'></i>
+                                </li>
+                                <li class="completed">
+                                    <p>Yoga</p>
+                                    <i class='bx bx-dots-vertical-rounded'></i>
+                                </li>
+                                <li class="not-completed">
+                                    <p>Fitness</p>
+                                    <i class='bx bx-dots-vertical-rounded'></i>
+                                </li>
+                                <!-- <li class="completed">
+                                    <p>5 Hours of coding</p>
+                                    <i class='bx bx-dots-vertical-rounded'></i>
+                                </li>
+                                <li class="completed">
+                                    <p>5 Hours of coding</p>
+                                    <i class='bx bx-dots-vertical-rounded'></i>
+                                </li> -->
+                            </ul>
+                        </div>
+                    </div>
+
+
+
+                </main>
+            <!-- MAIN -->
+
+
+        </section>
+        <!-- CONTENT -->
+
+        <!-- This area is for the scripts -->
+            <!-- The main script for the page -->
+            <script src="/javascript/theScript.js"></script>
+            <!-- The main script for the page -->
+
+            <!-- <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+            <script>
+                $(document).on('click', 'ul.top li', function(){
+                    $(this).addClass('active').siblings().removeClass('active')
+                })
+            </script> -->
+        <!-- This area is for the scripts -->
+    </body>
+
+
+</html>
